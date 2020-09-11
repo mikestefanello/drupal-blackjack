@@ -1,0 +1,7 @@
+services:
+  plugin.manager.blackjack.strategy:
+    class: Drupal\blackjack\BlackjackStrategyManager
+    parent: default_plugin_manager
+  blackjack.simulator:
+    class: Drupal\blackjack\BlackjackSimulator
+    arguments: ['@plugin.manager.blackjack.strategy', '@config.factory']

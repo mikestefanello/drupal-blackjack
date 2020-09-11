@@ -1,0 +1,6 @@
+services:
+  blackjack.commands:
+    class: \Drupal\blackjack\Commands\BlackjackCommands
+    arguments: ['@blackjack.simulator']
+    tags:
+      - { name: drush.command }

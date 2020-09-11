@@ -1,0 +1,15 @@
+blackjack.simulator.form:
+  path: '/blackjack'
+  defaults:
+    _form: '\Drupal\blackjack\Form\BlackjackSimulatorForm'
+    _title: 'Blackjack simulator settings'
+  requirements:
+    _permission: 'use blackjack simulator'
+
+blackjack.simulator:
+  path: '/blackjack/simulate'
+  defaults:
+    _controller: '\Drupal\blackjack\Controller\BlackjackSimulatorController::simulation'
+    _title: 'Blackjack simulation'
+  requirements:
+    _permission: 'use blackjack simulator'

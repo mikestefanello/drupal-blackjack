@@ -1,0 +1,61 @@
+blackjack.settings:
+  type: config_object
+  label: 'Blackjack settings'
+  mapping:
+    shoe:
+      type: mapping
+      label: 'Shoe settings'
+      mapping:
+        decks:
+          type: integer
+          label: 'The amount of decks in the shoe'
+        penetration:
+          type: float
+          label: 'How far the dealer can penetrate the shoe'
+    game:
+      type: mapping
+      label: 'Game settings'
+      mapping:
+        blackjack_payout:
+          type: float
+          label: 'The payout for a blackjack'
+        max_hands_per_game:
+          type: integer
+          label: 'The maximum amount of hands per game'
+        bet_min:
+          type: integer
+          label: 'The minimum allowed bet'
+        bet_max:
+          type: integer
+          label: 'The maximum allowed bet'
+    player:
+      type: mapping
+      label: 'Player settings'
+      mapping:
+        strategy:
+          type: string
+          label: 'The strategy plugin ID'
+        bankroll:
+          type: integer
+          label: 'The amount of money to start with'
+        spread:
+          type: integer
+          label: 'The maximum amount to multiply bets depending on strategy'
+        max_games:
+          type: integer
+          label: 'The maximum amount of games to play'
+    dealer:
+      type: mapping
+      label: 'Dealer settings'
+      mapping:
+        hit_soft_17:
+          type: boolean
+          label: 'If the dealer hits on soft 17'
+    results:
+      type: mapping
+      label: 'Results settings'
+      mapping:
+        output_hands:
+          type: boolean
+          label: 'If the hands should be included in the output'
+

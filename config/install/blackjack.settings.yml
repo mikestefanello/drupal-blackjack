@@ -1,0 +1,17 @@
+shoe:
+  decks: 6
+  penetration: 0.75
+game:
+  blackjack_payout: 1.5
+  max_hands_per_game: 4
+  bet_min: 10
+  bet_max: 5000
+player:
+  strategy: 'basic'
+  bankroll: 1000
+  spread: 8
+  max_games: 1000
+dealer:
+  hit_soft_17: true
+results:
+  output_hands: false
